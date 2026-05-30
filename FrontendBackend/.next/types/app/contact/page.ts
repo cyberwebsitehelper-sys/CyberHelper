@@ -1,8 +1,8 @@
-// File: E:\ProjectFolder\NantuDa2ndWebsite\NantuDa2ndWeb\FrontendBackend\app\branches\page.tsx
-import * as entry from '../../../../app/branches/page.js'
+// File: E:\ProjectFolder\NantuDa2ndWebsite\NantuDa2ndWeb\FrontendBackend\app\contact\page.tsx
+import * as entry from '../../../../app/contact/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../app/branches/page.js')
+type TEntry = typeof import('../../../../app/contact/page.js')
 
 type SegmentParams<T extends Object = any> = T extends Record<string, any>
   ? { [K in keyof T]: T[K] extends string ? string | string[] | undefined : never }

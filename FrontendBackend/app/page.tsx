@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Shield, Award, Users, TrendingUp, Scale, Gavel, Building2, FileText } from "lucide-react";
+import { ArrowRight, Shield, Award, Users, TrendingUp, Scale, Gavel, Building2, FileText, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import { PageLayout } from "@/components/site/PageLayout";
 
@@ -95,7 +95,43 @@ export default function Index() {
         </div>
       </section>
 
-      {/* STATS BAR - SMOOTH STAGGER */}
+      {/* MEET OUR EXPERTS SECTION */}
+      <section className="py-32 bg-background">
+        <div className="mx-auto max-w-7xl px-6">
+          <motion.div variants={fadeInUp} initial="initial" whileInView="whileInView" viewport={{ once: true }} className="text-center mb-20">
+            <div className="text-[11px] uppercase tracking-[0.4em] text-accent font-bold">Leadership</div>
+            <h2 className="mt-4 font-display text-5xl text-primary md:text-6xl">Our Partners</h2>
+            <div className="mt-6 mx-auto h-1 w-20 bg-gold" />
+          </motion.div>
+
+          <motion.div variants={staggerContainer} initial="initial" whileInView="whileInView" viewport={{ once: true }} className="grid gap-8 md:grid-cols-3">
+            {[
+              { img: "/assets/lawyer-1.jpg", name: "E.C. Agarwal", role: "Founding Partner" },
+              { img: "/assets/lawyer-2.jpg", name: "Mahesh Agarwal", role: "Managing Partner" },
+              { img: "/assets/lawyer-3.jpg", name: "Rishi Agarwal", role: "Partner — Litigation" },
+            ].map((lawyer) => (
+              <motion.div key={lawyer.name} variants={fadeInUp} className="group relative overflow-hidden rounded-[2rem] aspect-[4/5] bg-surface-dark shadow-xl">
+                <img src={lawyer.img} alt={lawyer.name} className="h-full w-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                <div className="absolute bottom-0 p-8">
+                   <div className="flex items-center gap-2 mb-2">
+                       <ShieldCheck className="h-3 w-3 text-gold" />
+                       <span className="text-[9px] uppercase tracking-widest text-gold font-bold">{lawyer.role}</span>
+                    </div>
+                  <h3 className="font-display text-2xl text-white uppercase">{lawyer.name}</h3>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+          <div className="mt-16 text-center">
+            <Link href="/team" className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary hover:text-gold transition-colors">
+              Meet the full team <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* STATS BAR */}
       <section className="relative z-10 -mt-10 border-y border-border bg-card/80 backdrop-blur-md">
         <motion.div
           variants={staggerContainer}
@@ -127,7 +163,7 @@ export default function Index() {
         </motion.div>
       </section>
 
-      {/* PRACTICE AREAS - PROFESSIONAL GRID */}
+      {/* PRACTICE AREAS */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0 topo-pattern opacity-10" />
         <div className="relative mx-auto max-w-7xl px-6">

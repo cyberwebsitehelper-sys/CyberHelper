@@ -1,8 +1,8 @@
 {
-  "node_modules\\.pnpm\\next@15.1.7_react-dom@19.2.6_react@19.2.6__react@19.2.6\\node_modules\\next\\dist\\client\\components\\react-dev-overlay\\internal\\helpers\\use-websocket.js -> @vercel/turbopack-ecmascript-runtime/browser/dev/hmr-client/hmr-client.ts": {
-    "id": "node_modules\\.pnpm\\next@15.1.7_react-dom@19.2.6_react@19.2.6__react@19.2.6\\node_modules\\next\\dist\\client\\components\\react-dev-overlay\\internal\\helpers\\use-websocket.js -> @vercel/turbopack-ecmascript-runtime/browser/dev/hmr-client/hmr-client.ts",
+  "node_modules\\.pnpm\\next@15.2.0_@babel+core@7.2_b45bf33a4ea7d32d6f7e7f6c08a9ecde\\node_modules\\next\\dist\\client\\components\\react-dev-overlay\\utils\\use-websocket.js -> @vercel/turbopack-ecmascript-runtime/browser/dev/hmr-client/hmr-client.ts": {
+    "id": "node_modules\\.pnpm\\next@15.2.0_@babel+core@7.2_b45bf33a4ea7d32d6f7e7f6c08a9ecde\\node_modules\\next\\dist\\client\\components\\react-dev-overlay\\utils\\use-websocket.js -> @vercel/turbopack-ecmascript-runtime/browser/dev/hmr-client/hmr-client.ts",
     "files": [
-      "static/chunks/_app-pages-browser_node_modules_pnpm_next_15_1_7_react-dom_19_2_6_react_19_2_6__react_19_2_6_-11b482.js"
+      "static/chunks/_app-pages-browser_node_modules_pnpm_next_15_2_0__babel_core_7_2_b45bf33a4ea7d32d6f7e7f6c08a9-5095da.js"
     ]
   }
 }
