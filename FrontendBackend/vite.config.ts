@@ -12,4 +12,6 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Force enable nitro so Vercel can correctly build and deploy the SSR server
+  nitro: true,
 });
