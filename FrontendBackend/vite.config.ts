@@ -13,5 +13,7 @@ export default defineConfig({
     server: { entry: "server" },
   },
   // Force enable nitro so Vercel can correctly build and deploy the SSR server
-  nitro: true,
+  nitro: {
+    preset: "node-server",
+  },
 });
