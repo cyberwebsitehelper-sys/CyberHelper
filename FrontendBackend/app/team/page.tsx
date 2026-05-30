@@ -4,9 +4,6 @@ import { motion } from "framer-motion";
 import { Linkedin, Mail, ShieldCheck } from "lucide-react";
 import { PageLayout } from "@/components/site/PageLayout";
 import { PageHero } from "@/components/site/PageHero";
-import lawyer1 from "@/assets/lawyer-1.jpg";
-import lawyer2 from "@/assets/lawyer-2.jpg";
-import lawyer3 from "@/assets/lawyer-3.jpg";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
@@ -25,9 +22,9 @@ const staggerContainer = {
 };
 
 const leaders = [
-  { img: lawyer1, name: "E.C. Agarwal", role: "Founding Partner", bio: "60+ years of legal practice. A pioneer of modern corporate and constitutional law in India." },
-  { img: lawyer2, name: "Mahesh Agarwal", role: "Managing Partner", bio: "Heads the corporate and insolvency practice with three decades of landmark litigation experience." },
-  { img: lawyer3, name: "Rishi Agarwal", role: "Partner — Litigation", bio: "Specializes in complex dispute resolution and international arbitration proceedings." },
+  { img: "/assets/lawyer-1.jpg", name: "E.C. Agarwal", role: "Founding Partner", bio: "60+ years of legal practice. A pioneer of modern corporate and constitutional law in India." },
+  { img: "/assets/lawyer-2.jpg", name: "Mahesh Agarwal", role: "Managing Partner", bio: "Heads the corporate and insolvency practice with three decades of landmark litigation experience." },
+  { img: "/assets/lawyer-3.jpg", name: "Rishi Agarwal", role: "Partner — Litigation", bio: "Specializes in complex dispute resolution and international arbitration proceedings." },
 ];
 
 const associates = [
@@ -81,7 +78,7 @@ export default function Team() {
                   <motion.img
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-                    src={l.img.src || l.img}
+                    src={l.img}
                     alt={l.name}
                     className="h-full w-full object-cover grayscale-[0.5] group-hover:grayscale-0 transition-all duration-700"
                   />

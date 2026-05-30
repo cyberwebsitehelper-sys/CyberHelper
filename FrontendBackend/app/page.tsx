@@ -4,9 +4,6 @@ import { motion } from "framer-motion";
 import { ArrowRight, Shield, Award, Users, TrendingUp, Scale, Gavel, Building2, FileText } from "lucide-react";
 import Link from "next/link";
 import { PageLayout } from "@/components/site/PageLayout";
-import heroOffice from "@/assets/hero-office.jpg";
-import cyberLegal from "@/assets/cyber-legal.jpg";
-import lawyer1 from "@/assets/lawyer-1.jpg";
 
 // Professional Animation Variants
 const fadeInUp = {
@@ -35,7 +32,7 @@ export default function Index() {
             initial={{ scale: 1.1, opacity: 0 }}
             animate={{ scale: 1, opacity: 0.4 }}
             transition={{ duration: 2, ease: "easeOut" }}
-            src={heroOffice.src || heroOffice}
+            src="/assets/hero-office.jpg"
             alt="Law office"
             className="h-full w-full object-cover"
           />
@@ -83,7 +80,7 @@ export default function Index() {
           >
             <div className="relative p-4">
               <div className="absolute -inset-1 rounded-2xl bg-gradient-to-tr from-gold/40 to-transparent blur-2xl" />
-              <img src={cyberLegal.src || cyberLegal} alt="Cyber Law" className="relative rounded-2xl shadow-2xl grayscale-[0.2] hover:grayscale-0 transition-all duration-700" />
+              <img src="/assets/cyber-legal.jpg" alt="Cyber Law" className="relative rounded-2xl shadow-2xl grayscale-[0.2] hover:grayscale-0 transition-all duration-700" />
 
               <motion.div
                 animate={{ y: [0, -10, 0] }}

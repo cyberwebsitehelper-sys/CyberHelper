@@ -122,20 +122,21 @@
   }
 }
 
-/* Custom Scrollbar for a premium look */
+/* Premium Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-background);
+  background: oklch(0.98 0.005 85);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-border);
-  border-radius: 10px;
+  background: oklch(0.75 0.13 75 / 0.3);
+  border-radius: 100px;
+  border: 3px solid oklch(0.98 0.005 85);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--gold);
+  background: oklch(0.75 0.13 75 / 0.6);
 }
